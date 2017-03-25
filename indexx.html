@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-    <title>Nanter Frechat</title>
+  <title>Nanter Frechat</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/app.css">
+  <link rel="stylesheet" type="text/css" href="assets/app.css">
 
-    <style>
-      body {
-        border: 1px solid black;
-      }
-    </style>
 
-    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
-         so we use a script file. -->
-    <script src="assets/app.js" defer></script>
+  <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+  so we use a script file. -->
+  <script src="assets/app.js" defer></script>
 
-  </head>
+</head>
 
-  <body onload="showScreenWidth()">
+<body>
 
-    <div id="sidebar"></div>
-    <div id="maincont">
-      <div class="content" id="movies"></div>
-      <div class="content" id="songs"></div>
-      <div class="content" id="books"></div>
-      <div class="content" id="games"></div>
-    </div>
-    <div id="topbar">
-      <p id="titleofp">NANTER FRECHAT</p>
-      <div id=buttoncontainer>
-        <input value="Movies" type="button" class="buttonTop" onClick="document.getElementById('movies').scrollIntoView();"></input>
-        <input value="Songs" type="button" class="buttonTop" onClick="document.getElementById('songs').scrollIntoView();"></input>
-        <input value="Books" type="button" class="buttonTop" onClick="document.getElementById('books').scrollIntoView();"></input>
-        <input value="Games" type="button" class="buttonTop" onClick="document.getElementById('games').scrollIntoView();"></input>
+
+  <div id="maincont">
+    <div class="content" id="movies">
+      <div id="moviesone">
+        <a target="_blank" href="https://www.youtube.com/watch?v=SUXWAEX2jlg"><img id="fightclub" src="assets/fightclub.jpg" alt="Fight Club Cover Image"></a>
+      </div>
+      <div id="moviesTwo">
 
       </div>
+      <div id="moviesThree">
+
+      </div>
+      <div id="moviesFour">
+
+      </div>
+    </div>
+    <div class="content" id="songs"></div>
+    <div class="content" id="books"></div>
+    <div class="content" id="games"></div>
+  </div>
+  <div id="topbar">
+    <div id="titleofp">NANTER FRECHAT</div>
+    <div id=buttoncontainer>
+      <input value="Movies" type="button" class="buttonTop" onClick="document.getElementById('movies').scrollIntoView();"></input>
+      <input value="Songs" type="button" class="buttonTop" onClick="document.getElementById('songs').scrollIntoView();"></input>
+      <input value="Books" type="button" class="buttonTop" onClick="document.getElementById('books').scrollIntoView();"></input>
+      <input value="Games" type="button" class="buttonTop" onClick="document.getElementById('games').scrollIntoView();"></input>
 
     </div>
-  </body>
+
+  </div>
+</body>
 
 </html>

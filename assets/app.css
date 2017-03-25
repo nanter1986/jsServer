@@ -1,6 +1,6 @@
-/**{
+*{
   border: 2px black dotted;
-}*/
+}
 #topbar{
   background: #d633ff;
   top:0%;
@@ -11,23 +11,14 @@
   z-index: =100;
   box-shadow: 3px 3px 3px #000;
 }
-#sidebar{
-  background: grey;
-  top:50px;
-  left:0px;
-  width: 20%;
-  height: 1200px;
-  position: fixed;
-  z-index: =99;
-  box-shadow: 0px 6px 3px #000;
-}
 #titleofp{
   position: absolute;
   width:50%;
-  left:0px;
-  top:0px;
+  height: 100%;
+  left:0%;
+  top:0%;
   color:white;
-  font-size: auto;
+  font-size: 3vw;
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -56,13 +47,14 @@
 }
 #maincont{
   position: absolute;
-  width: 80%;
+  width: 100%;
   top:50px;
-  left:20%;
+  left:0%;
   height: 2000px;
   z-index: =1000;
   background: black;
 }
+
 #movies{
   position: absolute;
   width:100%;
@@ -105,10 +97,61 @@
   height: 25%;
   left:0px;
   top:75%;
-  background: #bf40bf;
   background: -moz-linear-gradient(45deg, #bf40bf, #892d89, #5b1d5b);
   background: -webkit-linear-gradient(45deg, #bf40bf, #892d89, #5b1d5b);
   background: -ms-linear-gradient(45deg, #bf40bf, #892d89, #5b1d5b);
   background: -o-linear-gradient(45deg, #bf40bf, #892d89, #5b1d5b);
   background: linear-gradient(45deg, #bf40bf, #892d89, #5b1d5b);
+}
+#moviesone{
+  position: absolute;
+  width:25%;
+  height: 100%;
+  left:0%;
+  top:0%;
+}
+#moviesTwo{
+  position: absolute;
+  width:25%;
+  height: 100%;
+  left:25%;
+  top:0%;
+}
+#moviesThree{
+  position: absolute;
+  width:25%;
+  height: 100%;
+  left:50%;
+  top:0%;
+}
+#moviesFour{
+  position: absolute;
+  width:25%;
+  height: 100%;
+  left:75%;
+  top:0%;
+}
+#fightclub{
+  position: absolute;
+  width:70%;
+  height: 80%;
+  left:15%;
+  top:10%;
+  bottom: 10%;
+  right: 15%;
+  border-radius: 20px;
+}
+
+/* media queries*/
+@media screen and (max-width:600px){
+  #maincont{
+    position: absolute;
+    width: 100%;
+    top:50px;
+    left:0%;
+    height: 1000px;
+    z-index: =1000;
+    background: black;
+  }
+
 }

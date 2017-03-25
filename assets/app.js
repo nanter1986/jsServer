@@ -1,4 +1,4 @@
-function showScreenWidth(){
+function setContHeight(){
   var width=screen.width;
-  document.getElementById('movies').innerHTML="Width is:"+width;
+  document.getElementById('maincont').style.height=width;
 }
